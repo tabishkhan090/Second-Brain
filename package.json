@@ -7,6 +7,7 @@
     "build": "tsc -b",
     "start": "node dist/index.js",
     "dev": "npm run build && npm run start",
+    "nd": "nodemon --exec \"tsc -b && node dist/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +16,18 @@
   "type": "commonjs",
   "dependencies": {
     "@types/express": "^5.0.3",
+    "@types/nodemon": "^1.19.6",
+    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
-    "typescript": "^5.8.3"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "dotenv": "^17.0.1"
   }
 }
